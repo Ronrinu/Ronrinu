@@ -30,6 +30,24 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <title>Back to Top</title>
+    <style>
+        /* Styling for demonstration purposes */
+        #back-to-top {
+            display: none; /* Hide the button by default */
+            position: fixed; /* Fixed position so it remains visible as the user scrolls */
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+
+  
 </head>
 
 <body>
@@ -232,17 +250,17 @@ Nutrición premium para mascotas felices. ¡Alimento que les encanta, calidad qu
           <div class="col-md-6  ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/o1.jpg" alt="">
+                <img src="images/cat 4.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Tasty Thursdays
+                  Team Michi
                 </h5>
                 <h6>
-                  <span>20%</span> Off
+                  <span>15%</span> Off
                 </h6>
                 <a href="">
-                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  Compra Ya <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
                         <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -301,17 +319,17 @@ Nutrición premium para mascotas felices. ¡Alimento que les encanta, calidad qu
           <div class="col-md-6  ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/o2.jpg" alt="">
+                <img src="images/dog 2.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
-                  Pizza Days
+                  Team Perros
                 </h5>
                 <h6>
                   <span>15%</span> Off
                 </h6>
-                <a href="">
-                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                <a href="404.html">
+                  Compra Ya <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
                         <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -1361,8 +1379,30 @@ Trabajo de escuela con fines educativos; no sirve para ningun otro fin
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-  
 
+
+  <!-- ************************ -->
+ <a id="back-to-top" href="#">Back to Top</a>
+
+    <!-- Script to show/hide the button based on scroll position -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+
+        // Function to smoothly scroll back to the top when the button is clicked
+        document.getElementById("back-to-top").onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+    </script>
+  
 </body>
 
 </html>
